@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('#{$icon-font-path}oswald-regular-webfont.woff2') format('woff2'),
+         url('#{$icon-font-path}oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaNeue_Light';
+    src: url('#{$icon-font-path}HelveticaNeue-Light.woff2') format('woff2'),
+         url('#{$icon-font-path}HelveticaNeue-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
