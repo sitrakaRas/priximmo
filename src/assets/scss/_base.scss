@@ -1,0 +1,44 @@
+$icon-font-path: '../fonts/';
+@import "components/fonts";
+@import "components/variable";
+
+h1{
+    font-family: $oswald;
+    text-transform: uppercase;
+    color : $rose;
+    font-weight: normal;
+    font-size: 38px;
+}
+h2{
+    font-family: $oswald;
+    text-transform: uppercase;
+    color : $gris;
+    font-weight: normal;
+    font-size: 32px;
+}
+h3{
+    font-family: $oswald;
+    text-transform: uppercase;
+    color : $gris-f;
+    font-weight: normal;
+    font-size: 20px;
+}
+p{
+    font-family: $helvneue;
+    font-size: 14px;
+    color : $gris-f;
+    a{
+        font-family: $helvneue;
+        color : $rose;
+    }
+}
+footer{
+    li{
+        a{
+            font-size: 16px;
+            font-family: $oswald;
+            color : $noir;
+            font-weight: 400;
+        }
+    }
+}
