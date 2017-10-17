@@ -32,6 +32,19 @@ p{
         color : $rose;
     }
 }
+header {
+    .menu {
+        & >li {
+            &> a {
+                font-family: $oswald;
+                text-transform: uppercase;
+                color : $noir;
+                font-weight: normal;
+                font-size: 24px;
+            }
+        }
+    }
+}
 footer{
     li{
         a{
