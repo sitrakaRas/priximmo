@@ -1,7 +1,3 @@
-$icon-font-path: '../fonts/';
-@import "components/fonts";
-@import "components/variable";
-
 h1{
     font-family: $oswald;
     text-transform: uppercase;
@@ -41,4 +37,8 @@ footer{
             font-weight: 400;
         }
     }
+}
+
+.button{
+    text-transform: uppercase;
 }
