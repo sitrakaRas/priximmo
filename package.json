@@ -1,7 +1,7 @@
 {
-  "name": "foundation-zurb-template",
+  "name": "priximmo",
   "version": "1.0.0",
-  "description": "Official ZURB Template for Foundation for Sites.",
+  "description": "Prix Immo Sites.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
