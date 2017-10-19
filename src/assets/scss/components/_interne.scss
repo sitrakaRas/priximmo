@@ -1,3 +1,7 @@
+$breadcrumbs-item-separator-item: '|';
+$breadcrumbs-item-separator-item-rtl: '' ;
+$breadcrumbs-item-uppercase: false;
+
 body {
 	background: $gris-clair;
 }
@@ -25,27 +29,38 @@ body {
 		padding-right: 0;
 	}
 }
-.main {
-	margin-top: 25px;
-	padding: 40px 60px;	
-}
 
 section >.row {
-	background: $blanc;
+	background: $blanc;	
+	padding: 40px 45px;
 }
 
 .descriptif {
-	height: 508px;
 	margin-top: 25px;
-	padding: 40px 45px;
-	background: red;
 
 	.image-desc {
 		padding: 40px;
 		background: $gris-clair;
+		margin-bottom: 10px;
 
 		aside {
 			font-size: 30px;
+			text-transform: uppercase;
 		}
 	}
+}
+
+.wysiwyg {
+	h2 {
+		margin-top: 50px;
+		text-align: center;
+	}
+	p {
+		margin-bottom: 20px;
+
+	}
+}
+
+.form {
+	background: red;
 }
