@@ -63,11 +63,12 @@ $slick-font-path: 'assets/fonts/';
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-// Components
+// Base
 @import 'base';
 // Components
 @import 'components/header';
+@import 'components/footer';
 // Page
 @import 'components/home';
-//interne
+// interne
 @import 'components/interne'

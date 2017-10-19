@@ -1,3 +1,10 @@
+section {
+    &> .row {
+        &> h2 {
+            margin-bottom: 0;
+        }
+    }
+}
 .immo-une {
     h1 {
         margin-bottom: 40px;
@@ -58,30 +65,69 @@
     }
 }
 
+.immo-estim {
+    .bg-gris {
+        background-color: $gris-clair;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        h2 {
+            color: $noir;
+            display: inline-block;
+            margin-right: 40px;
+            margin-bottom: 0;
+        }
+        button {
+            margin-bottom: 0;
+        }
+    }
+}
+
 .immo-price {
+    .large-4 {
+        padding-left: 0;
+    }
     .bg-rose {
-        padding: 20px 40px;
+        padding: 20px 40px 30px;
+        margin-right: 0;
         h3 {
             color: $blanc;
+        }
+    }
+    .search-block {
+        padding-right: 0;
+        &> .row {
+            margin-right: 0;
+            margin-left: 0;
+            padding-top: 20px;
+            padding-left: 20px;
+            border: 2px solid $gris-clair;
         }
     }
     .button-wrapper {
         display: flex;
         align-items: center;
-        justify-content: center;
         min-height: 179px;
     }
 }
 
 .immo-rating {
-    .rating-block {
+    .bg-gris {
+        min-height: 371px;
+        padding: 20px 80px;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 371px;
-        padding: 20px 80px;
         h2 {
             color: $noir;
         }
+    }
+}
+
+.immo-contact {
+    textarea {
+        min-height: 182px;
     }
 }
