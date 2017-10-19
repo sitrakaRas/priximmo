@@ -1,22 +1,16 @@
 h1{
-    font-family: $oswald;
     text-transform: uppercase;
     color : $rose;
-    font-weight: normal;
     font-size: 38px;
 }
 h2{
-    font-family: $oswald;
     text-transform: uppercase;
     color : $gris;
-    font-weight: normal;
     font-size: 32px;
 }
 h3{
-    font-family: $oswald;
     text-transform: uppercase;
     color : $gris-f;
-    font-weight: normal;
     font-size: 20px;
 }
 p{
@@ -28,19 +22,7 @@ p{
         color : $rose;
     }
 }
-header {
-    .menu {
-        & >li {
-            &> a {
-                font-family: $oswald;
-                text-transform: uppercase;
-                color : $noir;
-                font-weight: normal;
-                font-size: 24px;
-            }
-        }
-    }
-}
+
 footer{
     li{
         a{

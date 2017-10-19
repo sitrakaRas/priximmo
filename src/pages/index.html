@@ -1,9 +1,9 @@
-<section> 
+<section class="banner"> 
   <div class="row expanded">
-    
+    <img src="assets/img/image-une-home.jpg" alt="">
   </div>
 </section>
-<section>
+<section class="immo-une mt-80">
   <div class="row">
     <div class="medium-7 large-6 columns">
       <h1>Les prix immobiliers à toulose</h1>
@@ -16,65 +16,104 @@
     </div>
   </div>
 </section>
-<section>
-  <div class="row column">
+<section class="immo-type mt-80">
+  <div class="row column text-center mb-20">
     <h2>Tous les prix de l'immobilier à toulouse</h2>
     <p>Vous souhaitez estimer votre bien ou le mettre en location ?</p>
   </div>
   <div class="row">
     <div class="large-4 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Neuf</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+      <a class="wrap-image">
+        <p><img src="assets/img/neuf.jpg" alt="image of a planet called Pegasi B"></p>
+        <div class="wrap-text text-center">
+          <p class="lead">Neuf</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+      </a>
     </div>
     <div class="large-4 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Ancien</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+      <a class="wrap-image">
+        <p><img src="assets/img/ancien.jpg" alt="image of a planet called Pegasi B"></p>
+        <div class="wrap-text text-center">
+          <p class="lead">Ancien</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+      </a>
     </div>
     <div class="large-4 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Location</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+      <a class="wrap-image">
+        <p><img src="assets/img/location.jpg" alt="image of a planet called Pegasi B"></p>
+        <div class="wrap-text text-center">
+          <p class="lead">Location</p>
+          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
-<section>
-  <div class="row column">
+<section class="immo-price mt-80">
+  <div class="row column text-center mb-20">
     <h2>Les prix par quartier</h2>
     <p>Entrez votre adresse et decouvrez le prix au m<sub>2</sub> de votre quartier ou de votre rue.</p>
   </div>
   <div class="row">
     <div class="large-8 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Neuf</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+      <div class="row">
+        <div class="medium-9 columns">
+          <h3>Recherche</h3>
+          <div class="row">
+            <div class="medium-3 columns">
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Acheter</label>
+            </div>
+            <div class="medium-3 end columns">
+              <input id="checkbox2" type="checkbox"><label for="checkbox2">Louer</label>
+            </div>
+          </div>
+          <div class="row column">
+            <label>
+              <input type="text" placeholder="Adresse*">
+            </label> 
+          </div>
+          <div class="row">
+            <div class="medium-6 columns">
+              <label>
+                <input type="text" placeholder="Code postal*">
+              </label>
+            </div>
+            <div class="medium-6 columns">
+              <label>
+                <input type="text" placeholder="Ville*">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="medium-3 columns button-wrapper">
+          <button type="submit" class="button outline">Recherchez</button>
+        </div>
+      </div>
     </div>
-    <div class="large-4 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Location</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+    <div class="large-4 columns bg-rose">
+      <h3>Résultat</h3>
+      <img src="assets/img/ampoule-resultat.png" alt="">
     </div>
   </div>
 </section>
-<section>
-  <div class="row column">
-    <h2>Les prix par quartier</h2>
-    <p>Entrez votre adresse et decouvrez le prix au m<sub>2</sub> de votre quartier ou de votre rue.</p>
-  </div>
+<section class="immo-rating mt-80">
   <div class="row">
-    <div class="large-6 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+    <div class="large-6 columns pr-0">
+      <p class="pb-0"><img src="assets/img/cta-estimez.jpg" alt=""></p>
     </div>
-    <div class="large-6 columns">
-      <h3>Estimez votre bien</h3>
-      <p>Vous souhaitez vendre votre appartement ou votre maison ? Obtenez votre estimation gratuie en quelques clics</p>
-      <button type="button" class="button">Estimez votre bien</button>
+    <div class="large-6 columns rating-block bg-gris">
+      <div class="content-wrapper">
+        <h2>Estimez votre bien</h2>
+        <p class="mb-0">Vous souhaitez vendre votre appartement ou votre maison ? Obtenez votre estimation gratuie en quelques clics</p>
+        <button type="button" class="button">Estimez votre bien</button>
+      </div>
     </div>
   </div>
 </section>
-<section>
-  <div class="row column">
+<section class="immo-methode mt-80">
+  <div class="row column text-center">
     <h2>Notre méthode</h2>
   </div>
   <div class="row">
@@ -108,26 +147,26 @@
     </div>
   </div>
 </section>
-<section class="news">
-  <div class="row column">
+<section class="immo-news mt-80">
+  <div class="row column text-center">
     <h2>Actualités</h2>
     <p><a href="#0">[Voir tout]</a></p>
   </div>
   <div class="row">
     <div class="large-4 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+      <p><img src="assets/img/actu.jpg" alt="image of a planet called Pegasi B"></p>
       <p class="lead">Titre</p>
-      <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quod, tempore odio alias aliquid ullam culpa! Reprehenderit fugit expedita suscipit temporibus, laborum, beatae vel optio quam tenetur veritatis soluta hic.</p>
+      <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quod, tempore odio alias aliquid ullam culpa! Reprehenderit.</p>
     </div>
     <div class="large-4 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+      <p><img src="assets/img/actu2.jpg" alt="image of a planet called Pegasi B"></p>
       <p class="lead">Titre</p>
-      <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quod, tempore odio alias aliquid ullam culpa! Reprehenderit fugit expedita suscipit temporibus, laborum, beatae vel optio quam tenetur veritatis soluta hic.</p>
+      <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quod, tempore odio alias aliquid ullam culpa! Reprehenderit.</p>
     </div>
     <div class="large-4 columns">
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+      <p><img src="assets/img/actu3.jpg" alt="image of a planet called Pegasi B"></p>
       <p class="lead">Titre</p>
-      <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quod, tempore odio alias aliquid ullam culpa! Reprehenderit fugit expedita suscipit temporibus, laborum, beatae vel optio quam tenetur veritatis soluta hic.</p>
+      <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quod, tempore odio alias aliquid ullam culpa! Reprehenderit.</p>
     </div>
   </div>
 </section>

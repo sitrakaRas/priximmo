@@ -1,0 +1,23 @@
+header {
+    .top-bar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    nav {
+        display: flex;
+        min-height: 126px;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu {
+        & >li {
+            &> a {
+                font-family: $oswald;
+                text-transform: uppercase;
+                color : $noir;
+                font-weight: normal;
+                font-size: 16px;
+            }
+        }
+    }
+}
