@@ -1,0 +1,51 @@
+body {
+	background: $gris-clair;
+}
+
+.no-gutter {
+	padding: 0;
+}
+
+.no-gutter-left {
+	padding-left: 0;
+}
+
+.no-gutter-right {
+	padding-right: 0;
+}
+
+.no-gutter-left-lg-up {
+	@media screen and (min-width: 64em) {
+		padding-left: 0;
+	}
+}
+
+.no-gutter-right-lg-up {
+	@media screen and (min-width: 64em) {
+		padding-right: 0;
+	}
+}
+.main {
+	margin-top: 25px;
+	padding: 40px 60px;	
+}
+
+section >.row {
+	background: $blanc;
+}
+
+.descriptif {
+	height: 508px;
+	margin-top: 25px;
+	padding: 40px 45px;
+	background: red;
+
+	.image-desc {
+		padding: 40px;
+		background: $gris-clair;
+
+		aside {
+			font-size: 30px;
+		}
+	}
+}
