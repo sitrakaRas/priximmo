@@ -30,7 +30,7 @@
 .section {
 	&:last-child {
 		> .row {
-			padding-bottom: 0;
+			padding-bottom: 10px;
 		}
 	}
 
@@ -76,6 +76,8 @@
 		margin-bottom: 25px;
 	}
 	table {
+		margin-bottom: 90px;
+
 		tr {
 			th, td {
 				 border: 1px solid $gris;
@@ -87,7 +89,46 @@
 				color: $rose;
 				text-transform: uppercase;
 			}
+			td {
+				padding-left: 18px;
+				padding-right: 18px;
+				width: 50%;
+				background: $blanc;
+				
+			}
 		}
+	}
+
+	ol {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		font-size: 14px;
+
+
+			li {
+				counter-increment: li;
+				margin-bottom: 15px;
+
+				b {					
+					color: $rose;					
+				}
+
+				span {
+					display: block;
+					margin-left: 15px;
+					font-family: $helvneue;
+		   			color : $gris-f;
+				}
+
+				&:before {
+					content: counter(li); 
+					color: $rose;
+			  		display: inline-block; 
+			  		width: 15px;
+			  		font-weight: bold;
+				}
+			}
 	}
 }
 
@@ -99,7 +140,7 @@
 	background: $gris;
 	color: $blanc;
 	cursor: pointer;
-	font-size: 10px;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -186,5 +227,54 @@
 				margin-right: 12px;
 			}
 		}
+	}
+}
+
+.grey-box-aside {
+	margin-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	h3 {
+		margin-bottom: 30px;
+		font-size: 14px;
+	}
+
+	span {
+		text-transform: uppercase;
+		color: $rose;
+	}
+}
+
+.img-container {
+	position: relative;
+	height: 700px;
+	background: $gris;
+	overflow: hidden;
+	
+	img, .box-404 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}	
+
+	img {
+		width: auto;
+		height: auto;
+	}
+	.box-404 {
+		max-width: 480px;
+		min-width: 300px;
+		background: $blanc;
+		padding: 30px 40px;
+
+		h1 {
+			margin-bottom: 40px;
+		}
+		p {
+			line-height: 30px;
+		}
+
 	}
 }
