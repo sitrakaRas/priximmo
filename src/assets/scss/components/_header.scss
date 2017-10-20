@@ -1,6 +1,9 @@
 header {
     background-color: $blanc;
     .title-bar {
+        @media screen and (max-width: 64em) {
+            padding-top: 18px
+        }
         padding-left: 20px;
         padding-right: 20px;
         display: flex;
@@ -8,13 +11,17 @@ header {
         button {
             i {
                 color: $rose;
-                font-size: 30px;
+                font-size: 26px;
             }
         }
     }
     .top-bar {
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+        @media screen and (min-width: 64em) {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
     }
     nav {
         display: flex;
@@ -22,8 +29,23 @@ header {
         justify-content: center;
         .menu {
             li {
-                min-width: 170px;
                 text-align: center;
+                min-width: 170px;
+                @media screen and (min-width: 40em) {
+                    min-width: 110px;
+                }
+                @media screen and (min-width: 74.9375em) {
+                    min-width: 170px;
+                }
+            }
+        }
+        &.mobile-menu {
+            .menu li {
+                text-align: left;
+                a {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
         }
     }
@@ -39,12 +61,61 @@ header {
         }
     }
 }
-.menu-mobile {
-    padding: 40px;
-    & >li {
-        &> a {
-            padding-left: 0;
-            padding-right: 0;
+.position-left {
+    height: auto;
+}
+.off-canvas {
+    background-color: transparent;  
+    nav {
+        display: block;
+    }
+    .menu-mobile {
+        padding: 40px;
+        width: calc(100% - 26px);
+        background-color: $blanc;
+        &.bg-rose {
+            background-color: $rose;
+        }
+        &:after {
+            content: '\f00d';
+            display: block;
+            position: absolute;
+            right: -25px;
+            background-color: $blanc;
+            color: $rose;
+            padding: 5px;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 20px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        & >li {
+            &> a {
+                padding-left: 0;
+                padding-right: 0;
+                text-transform: inherit;
+            }
+            &> button {
+                margin-top: 20px;
+            }
+        }
+        &.bg-rose {
+            background-color: $rose;
+            &:after {
+                background-color: $rose;
+                color: $blanc;
+            }
+            & >li {
+                &> a {
+                    color: $blanc;
+                }
+                &> button {
+                    background-color: $blanc;
+                    color: $rose;
+                }
+            }
         }
     }
 }
