@@ -13,22 +13,24 @@ import slick from 'slick-carousel';
 
 $(document).foundation();
 
-$('.slider').slick({
-  infinite: false,
-  responsive: [{
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 3,
-      infinite: true
+let slider = $('.slider');
+let settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true
+  }
+slider.slick(settings);
+
+$(window).on('resize', function() {
+  if ($(window).width() > 768) {
+    if (slider.hasClass('slick-initialized')) {
+      slider.slick('unslick');
     }
-  }, {
-    breakpoint: 600,
-    settings: {
-      slidesToShow: 2,
-      dots: true
-    }
-  }, {
-    breakpoint: 300,
-    settings: "unslick" // destroys slick
-  }]
+    return
+  }
+
+  if (!slider.hasClass('slick-initialized')) {
+    return slider.slick(settings);
+  }
 });
+

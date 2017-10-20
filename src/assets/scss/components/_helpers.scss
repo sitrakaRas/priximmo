@@ -1,26 +1,26 @@
 .mt-80 {
-    margin-top: 80px;
+    margin-top: rem-calc(80px);
 }
 .pt-80 {
-    padding-top: 80px;
+    padding-top: rem-calc(80px);
 }
 .pb-80 {
-    padding-bottom: 80px;
+    padding-bottom: rem-calc(80px);
 }
 .pt-40 {
-    padding-top: 40px;
+    padding-top: rem-calc(40px);
 }
 .pb-40 {
-    padding-bottom: 40px;
+    padding-bottom: rem-calc(40px);
 }
 .pb-20 {
-    padding-bottom: 20px;
+    padding-bottom: rem-calc(20px);
 }
 .mb-20{
-    margin-bottom: 20px;
+    margin-bottom: rem-calc(20px);
 }
 .mb-40 {
-    margin-bottom: 40px;
+    margin-bottom: rem-calc(40px);
 }
 .mb-0 {
     margin-bottom: 0;
@@ -36,4 +36,60 @@
 }
 .bg-gris {
     background-color: $gris-clair;
+}
+
+form {
+    [type='checkbox'] {
+        margin-bottom: rem-calc(20px);
+    }
+    label input[type='text'] {
+        height: rem-calc(45px);
+        padding-left: rem-calc(20px);
+        padding-right: rem-calc(20px);
+    }
+    .error label input{
+        border-color: $rose;
+    }
+
+}
+
+.slick-dotted.slick-slider, .slider {
+    height: auto;
+    background-color: $blanc;
+    margin-top: 0;
+    margin-bottom: 0;
+    .slick-dots {
+        position: relative;
+        bottom: inherit;
+        margin-top: 35px;
+        li {
+            button {
+                width: 14px;
+                height: 14px;
+                border: 1px solid $gris-form;
+                position: relative;
+                border-radius: 50%;
+                text-align: center;
+                padding: 0;
+                text-indent: 9999px;
+            }
+            &.slick-active {
+                button {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        background-color: $gris-form;
+                        border-radius: 50%;
+                        top: 50%;
+                        margin-top: -5px;
+                        left: 50%;
+                        margin-left: -5px;
+                    }
+                }
+            }
+        }
+    }
 }
