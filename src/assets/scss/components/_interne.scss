@@ -22,6 +22,7 @@
 		padding-right: 0;
 	}
 }
+
 .wrapper {
 	margin-top: 25px;
 	margin-bottom: 85px;	
@@ -36,7 +37,12 @@
 
 	> .row {
 		background: $blanc;
-		padding: 40px 45px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		@media screen and (min-width: 40em) {
+			padding: 40px 45px;
+		}
 	}
 }
 
@@ -81,7 +87,8 @@
 		tr {
 			th, td {
 				 border: 1px solid $gris;
-				 min-height: 50px;
+				 padding-top: 13px;
+				 padding-bottom: 13px;
 			}
 
 			th {
@@ -104,7 +111,6 @@
 		margin: 0;
 		list-style: none;
 		font-size: 14px;
-
 
 			li {
 				counter-increment: li;
@@ -147,6 +153,46 @@
 .form-container {
 	padding: 40px 20px;
 	background: $gris-clair;
+	form {
+		[type='checkbox'] {
+			margin-bottom: 20px;
+		}
+		label {
+			margin-right: 0;
+			
+			input {
+			height: 45px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-bottom: 23px;
+		}
+		}
+
+		.h-24 {
+			label input, label select {
+				height: 24px;				
+			}
+
+			 label select {
+				padding-top: 0;
+				padding-bottom: 0;
+				padding-left: 20px;
+			 }
+
+		}
+
+		.error label input{
+			border-color: $rose;
+		}
+
+		.small-2 > i {
+			color: $gris;
+			font-size: 14px;
+		}
+		hr {
+			border-bottom-color: $gris;
+		}
+	}
 }
 
 .result {
@@ -216,18 +262,24 @@
 }
 
 .grey-box-aside {
-	margin-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
 
 	h3 {
 		margin-bottom: 30px;
-		font-size: 14px;
 	}
 
 	span {
+		display: block;
 		text-transform: uppercase;
 		color: $rose;
+		margin-bottom: 20px;
+		& + p {
+			margin-bottom: 40px;
+		}
+	}
+	p {
+		margin-bottom: 0;
 	}
 }
 
