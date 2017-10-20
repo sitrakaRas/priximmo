@@ -75,6 +75,20 @@
 	p {
 		margin-bottom: 25px;
 	}
+	table {
+		tr {
+			th, td {
+				 border: 1px solid $gris;
+				 min-height: 50px;
+			}
+
+			th {
+				background: $gris-clair;
+				color: $rose;
+				text-transform: uppercase;
+			}
+		}
+	}
 }
 
 .top {
