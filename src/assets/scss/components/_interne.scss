@@ -1,7 +1,3 @@
-$breadcrumbs-item-separator-item: '|';
-$breadcrumbs-item-separator-item-rtl: '' ;
-$breadcrumbs-item-uppercase: false;
-
 body {
 	background: $gris-clair;
 }
@@ -29,38 +25,157 @@ body {
 		padding-right: 0;
 	}
 }
+.wrapper {
+	margin-top: 25px;
+	margin-bottom: 85px;	
+}
 
-section >.row {
-	background: $blanc;	
-	padding: 40px 45px;
+section {
+	&:last-child {
+		> .row {
+			padding-bottom: 0;
+		}
+	}
+
+	> .row {
+		background: $blanc;
+		padding: 40px 45px;
+	}
+}
+
+.grey-box {	
+	padding: 40px;
+	background: $gris-clair;
 }
 
 .descriptif {
-	margin-top: 25px;
+	// height: 508px;
 
 	.image-desc {
-		padding: 40px;
-		background: $gris-clair;
-		margin-bottom: 10px;
-
-		aside {
-			font-size: 30px;
-			text-transform: uppercase;
+		
+		h3 {
+			font-size: 32px;
+			margin-bottom: 27px;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+		& + .breadcrumbs {
+			margin-top: 10px;
 		}
 	}
 }
 
 .wysiwyg {
+	margin-bottom: 65px;
+
+	h1 {
+		margin-bottom: 50px;		
+	}
 	h2 {
-		margin-top: 50px;
+		margin-top: 60px;
 		text-align: center;
+		margin-bottom: 20px;
 	}
 	p {
-		margin-bottom: 20px;
+		margin-bottom: 25px;
+	}
+}
+
+.top {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	background: $gris;
+	color: $blanc;
+	cursor: pointer;
+	font-size: 10px;
+	text-align: center;
+}
+
+.form-container {
+	padding: 40px 20px;
+	background: $gris-clair;
+
+	form {
+		[type='checkbox'] {
+			margin-bottom: 20px;
+		}
+		label input {
+			height: 45px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.error label input{
+			border-color: $rose;
+		}
 
 	}
 }
 
-.form {
-	background: red;
+.result {
+	background: $rose;
+	padding: 30px 15px 60px;
+
+	span {
+		display: block;
+		margin-bottom: 15px;
+		text-align: left;
+		color: $blanc;
+		text-transform: uppercase;
+		font-family: $oswald;
+		font-size: 20px;
+	}
+}
+
+.map-container {
+	margin-bottom: 75px;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+.estimation-container {
+	margin-bottom: 75px;
+	padding: 10px 20px;
+	background: $gris-clair;
+
+	h3 {
+		display: inline-block;
+	}
+
+	@media screen and (min-width: 64em) {
+		height: 102px;
+		line-height: 102px;
+	}
+
+}
+
+.quarter-price-container {
+	margin-bottom: 20px;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			font-family: $helvneue;
+    		font-size: 14px;
+   			color : $gris-f;
+
+			&:before {
+				content:"•";
+				color: $rose;
+				margin-right: 12px;
+			}
+		}
+	}
 }
