@@ -39,36 +39,332 @@
                 </article>
 
                 <div class="form-container">
-                    <h3>recherche</h3>
                     <form action="" >
-                        <div class="row">
-                            <div class="large-6 columns">
-                                <input id="checkbox1" type="checkbox" class="checkbox"><label for="checkbox1">Acheter</label>
-                            </div>
-                            <div class="large-6 columns">
-                                <input id="checkbox2" type="checkbox" class="checkbox"><label for="checkbox2">Louer</label>
-                            </div>
-                            <div class="large-12 columns error">
+                        <h3 class="mb-30">adresse du bien à estimer</h3>
+                        <div class="row">                            
+                            <div class="large-12 columns ">
                               <label>
                                 <input type="text" placeholder="Adresse*" />
                               </label>
+                            </div>                         
+                        </div>
+                        <div class="row mb-30">
+                            <div class="medium-6 columns">
+                                <label>
+                                    <input type="text" placeholder="Code postal*">
+                                </label>
                             </div>
-                            <div class="large-12 columns">
-                              <label>
-                                <input type="text" placeholder="Code postal*" />
-                              </label>
+                            <div class="medium-6 columns">
+                                <label>
+                                    <input type="text" placeholder="Ville*">
+                                </label>
                             </div>
-                            <div class="large-12 columns">
-                              <label>
-                                <input type="text" placeholder="Ville*" />
-                              </label>
+                        </div>
+
+                        <h3 class="mb-30">caractéristiques du bien</h3>
+                        
+                        <div class="row ">
+                            <div class="medium-4 columns">                                
+                                <label>
+                                    Type de bien à estimer*
+                                </label>
                             </div>
-                            <div class="large-12 columns text-center">
-                                <button type="button" class="button">trouvez</button>
+                            <div class="medium-3 columns">                                
+                                <input name="type" id="radio1" type="radio" class="radio"><label for="radio1">Maison</label>                                
                             </div>
+                            <div class="medium-3 columns end">                                
+                                <input name="type" id="radio2" type="radio" class="radio"><label for="radio2">Appartement</label>                                                              
+                            </div>
+                        </div>
+
+                        <div class="row mb-20">
+                            <div class="medium-4 columns">                                
+                                <label>
+                                   Surface <small>(hors balcon/terrasse)</small>
+                                </label>
+                            </div>
+                            <div class="medium-4 columns">  
+                                <label>
+                                  Surface deu terrain
+                                </label>                              
+                            </div>
+                            <div class="medium-4 columns">                                
+                                <label>
+                                   Nombre de salle de bain
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-4 columns h-24">
+                                <label>
+                                    <input type="text" placeholder="en m²">
+                                </label>
+                            </div>
+                            <div class="medium-4 columns h-24">
+                                <label>
+                                    <input type="text" placeholder="en m²">
+                                </label>
+                            </div>
+                            <div class="medium-4 columns h-24">
+                                <label>
+                                    <input type="text" placeholder="Téléphone*">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-link"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Mitoyenneté</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-2 columns">
+                                <input name="myto" id="radio3" type="radio" class="radio"><label for="radio3">non</label>                                                                   
+                            </div>
+                            <div class="medium-2 columns">                                
+                                <input name="myto" id="radio4" type="radio" class="radio"><label for="radio4">oui</label>                                                                   
+                            </div>
+                            <div class="medium-3 columns">                                
+                                <input name="myto" id="radio5" type="radio" class="radio"><label for="radio5">deux côtés</label>                                                                   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-car"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Garage</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-2 columns">
+                                <input name="garage" id="radio6" type="radio" class="radio"><label for="radio6">non</label>                                                                   
+                            </div>
+                            <div class="medium-2 columns end">                                
+                                <input name="garage" id="radio7" type="radio" class="radio"><label for="radio7">oui</label>                                                                   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-tint"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Piscine</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-2 columns">
+                                <input name="piscine" id="radio8" type="radio" class="radio"><label for="radio8">non</label>                                                                   
+                            </div>
+                            <div class="medium-2 columns end">                                
+                                <input name="piscine" id="radio9" type="radio" class="radio"><label for="radio9">oui</label>                                                                   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-eye-slash"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Vis à vis</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-2 columns">
+                                <input name="vis" id="radio10" type="radio" class="radio"><label for="radio10">non</label>                                                                  
+                            </div>
+                            <div class="medium-2 columns end">                                
+                                <input name="vis" id="radio11" type="radio" class="radio"><label for="radio11">oui</label>                                                                   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-pause"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Double vitrage</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-2 columns">
+                                <input name="vitre" id="radio12" type="radio" class="radio"><label for="radio12">non</label>                                                                  
+                            </div>
+                            <div class="medium-2 columns end">                                
+                                <input name="vitre" id="radio13" type="radio" class="radio"><label for="radio13">oui</label>                                                                   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-shopping-cart"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Proximité commerces</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-2 columns">
+                                <input name="proxi" id="radio14" type="radio" class="radio"><label for="radio14">non</label>                                                                  
+                            </div>
+                            <div class="medium-2 columns end">                                
+                                <input name="proxi" id="radio15" type="radio" class="radio"><label for="radio15">oui</label>                                                                   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-subway"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Transport</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-2 columns">
+                                <input name="transport" id="radio14" type="radio" class="radio"><label for="radio14">non</label>                                                                  
+                            </div>
+                            <div class="medium-2 columns end">                                
+                                <input name="transport" id="radio15" type="radio" class="radio"><label for="radio15">oui</label>                                                                   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-check"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Qualité prestations intérieures</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns end h-24">
+                                <label>
+                                <select name="qualite">
+                                    <option value="-5">Inférieure</option>
+                                    <option value="null">Intérmediare</option>
+                                    <option value="3">supérieure</option>
+                                </select>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-bed"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Agencement</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns end h-24">
+                                <label>
+                                <select name="agence">
+                                    <option value="-5">Inférieur</option>
+                                    <option value="null">Intérmediare</option>
+                                    <option value="3">supérieur</option>
+                                </select>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-bed"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Emplacement du bien</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns end h-24">
+                                <label>
+                                <select name="place">
+                                    <option value="-5">Inférieure</option>
+                                    <option value="null">Intérmediare</option>
+                                    <option value="3">supérieure</option>
+                                </select>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-5 columns">                                
+                                <div class="row">
+                                    <div class="small-2 columns"><i class="fa fa-compass"></i></div>
+                                    <div class="small-10 columns">
+                                        <label>Orientation pièce principale</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-4 columns end h-24">
+                                <label>
+                                <select name="orientation">
+                                    <option value="-3">Nord</option>
+                                    <option value="3">Sud</option>
+                                    <option value="null">Est</option>
+                                    <option value="null">Ouest</option>
+                                </select>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <hr>
+
+                        <h3 class="mb-30">informations personnelles</h3>
+
+                        <div class="row">
+                            <div class="medium-7 columns">
+                                <div class="row">
+                                    <div class="medium-5 columns">
+                                        <label> Civilité* </label>
+                                    </div>
+                                    <div class="medium-4 columns">
+                                       <input id="checkbox1" type="checkbox" class="checkbox"><label for="checkbox1">Mme</label>
+                                    </div>
+                                    <div class="medium-3 columns">
+                                        <input id="checkbox2" type="checkbox" class="checkbox"><label for="checkbox2">Mr</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-5 columns">
+                                <label>
+                                    <input type="text" placeholder="Nom*">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row mb-30">
+                            <div class="medium-7 columns">
+                                <label>
+                                    <input type="email" placeholder="Email*">
+                                </label>
+                            </div>
+                            <div class="medium-5 columns">
+                                <label>
+                                    <input type="text" placeholder="Téléphone*">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="large-12 columns text-right mb-60">
+                            <button type="submit" class="button">estimez ce bien</button>
                         </div>
                     </form>
                 </div>
+
+                <h2 class="mb-30 text-center">le critères importants de votre estimation</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam illo unde sint consequatur, perferendis iure et officiis maiores. Odit earum nisi nihil eius dolor, debitis qui facere, voluptatibus molestias! Sint. optio totam, doloremque ab laboriosam quis dignissimos dolores? Voluptatibus, ex.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam unde mollitia natus architecto rerum commodi, cum eveniet odio. Incidunt eaque quam pariatur quia dolore. Explicabo facere consequuntur cumque harum praesentium!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eaque illum, reiciendis sequi corporis tempora, vero possimus libero debitis dolore </p>
             </div>
             <div class="large-offset-1 large-4 columns">
 
@@ -84,10 +380,10 @@
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, consequatur nobis aut ratione odit, recusandae similique impedit dicta odio, ad incidunt ex. Aspernatur asperiores dicta, minima similique? Vero, eveniet.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, dolorum. Voluptas labore fuga dicta, incidunt excepturi, consectetur animi beatae odio cum tenetur cupiditate. Tempore sed, modi dolor quae facere explicabo?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     </p>
                      <div class="text-center">
-                        <button type="button" class="button">trouvez</button>
+                        <button type="button" class="button">prenez rendez-vous</button>
                     </div>
                 </aside>
             </div>
