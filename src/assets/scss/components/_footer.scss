@@ -2,16 +2,20 @@ footer {
     &> .row {
         background-color: $blanc;
         li{
+            padding-left: rem-calc(16px);
             a{
-                font-size: 16px;
+                font-size: rem-calc(16px);
                 font-family: $oswald;
                 color : $noir;
                 font-weight: 400;
+                text-transform: inherit;
+                padding-right: 0;
+                padding-left: 0;
             }
         }
         .cnil-block {
             border: 4px solid $gris-clair;
-            padding: 20px 40px;
+            padding: rem-calc(20px) rem-calc(40px);;
         }
     }
 }

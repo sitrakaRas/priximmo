@@ -92,21 +92,6 @@
 .form-container {
 	padding: 40px 20px;
 	background: $gris-clair;
-
-	form {
-		[type='checkbox'] {
-			margin-bottom: 20px;
-		}
-		label input {
-			height: 45px;
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-		.error label input{
-			border-color: $rose;
-		}
-
-	}
 }
 
 .result {

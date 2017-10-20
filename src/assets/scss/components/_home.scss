@@ -1,5 +1,12 @@
 section {
-    &> .row {
+    &> .row:not(.expanded) {
+        background-color: $blanc;
+        padding-left: 28px;
+        padding-right: 25px; 
+        @media screen and (min-width: 64em) {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
         &> h2 {
             margin-bottom: 0;
         }
@@ -68,11 +75,13 @@ section {
 .immo-estim {
     .bg-gris {
         background-color: $gris-clair;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        text-align: center;
+        @media screen and (min-width: 64em) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        padding: 10px 25px;
         h2 {
             color: $noir;
             display: inline-block;
@@ -87,47 +96,88 @@ section {
 
 .immo-price {
     .large-4 {
-        padding-left: 0;
+        @media screen and (min-width: 64em) {
+            padding-left: 0;
+        }
     }
     .bg-rose {
-        padding: 20px 40px 30px;
+        padding: 20px 40px 48px;
         margin-right: 0;
         h3 {
             color: $blanc;
         }
     }
     .search-block {
-        padding-right: 0;
+        @media screen and (min-width: 64em) {
+            padding-right: 0;
+        }
         &> .row {
-            margin-right: 0;
-            margin-left: 0;
-            padding-top: 20px;
-            padding-left: 20px;
-            border: 2px solid $gris-clair;
+            @media screen and (min-width: 64em) {
+                margin-right: 0;
+                margin-left: 0;
+                padding-top: 20px;
+                padding-left: 20px;
+                border: 3px solid $gris-clair;
+            }
         }
     }
     .button-wrapper {
         display: flex;
         align-items: center;
-        min-height: 179px;
+        @media screen and (min-width: 64em) {
+            min-height: 179px;
+        }
+    }
+}
+
+.immo-news {
+    h3 {
+        font-size: 22px;
+        color: $noir;
+        margin-bottom: 20px;
+    }
+    p {
+        color: $noir;
     }
 }
 
 .immo-rating {
-    .bg-gris {
-        min-height: 371px;
-        padding: 20px 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        h2 {
-            color: $noir;
+    .images-wrapper {
+        @media screen and (min-width: 64em) {
+            width: calc(50% - 15px);
+            padding-right: 0;
+        }
+    }
+    .rating-block {
+        @media screen and (min-width: 64em) {
+            width: calc(50% + 15px);
+            padding-left: 0;
+        }
+        .bg-gris {
+            padding: 20px 10px;
+            @media screen and (min-width: 64em) {
+                min-height: 371px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h2 {
+                color: $noir;
+            }
+            .content-wrapper {
+                h2, p {
+                    text-align: left
+                }
+                @media screen and (max-width: 64em) {
+                    text-align: center;
+                } 
+            }
         }
     }
 }
 
 .immo-contact {
     textarea {
-        min-height: 182px;
+        min-height: 204px;
     }
-}
+}   

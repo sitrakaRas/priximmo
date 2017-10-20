@@ -1,4 +1,5 @@
 header {
+    background-color: $blanc;
     .title-bar {
         padding-left: 20px;
         padding-right: 20px;
@@ -13,13 +14,18 @@ header {
     }
     .top-bar {
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     nav {
         display: flex;
-        min-height: 126px;
         align-items: center;
         justify-content: center;
+        .menu {
+            li {
+                min-width: 170px;
+                text-align: center;
+            }
+        }
     }
 }
 .menu {
