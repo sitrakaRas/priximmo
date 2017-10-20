@@ -157,11 +157,15 @@
 		[type='checkbox'] {
 			margin-bottom: 20px;
 		}
-		label input {
+		label {
+			margin-right: 0;
+			
+			input {
 			height: 45px;
 			padding-left: 20px;
 			padding-right: 20px;
 			margin-bottom: 23px;
+		}
 		}
 
 		.h-24 {
