@@ -5,3 +5,23 @@
         height: 100%;
     }
 }
+.immo-rating.estim-block{
+    .rating-block {
+        @media screen and (min-width: 64em) {
+            width: calc( 50% + 15px);
+            padding-left: 0;
+        }
+        .bg-gris{
+            padding: 0 40px;
+        }
+        .button{
+            padding: 1em 2.5em;
+        }
+    }
+    .content-img{
+        background-color: #f1f0ef;
+        @media screen and (min-width: 64em) {
+            width: calc( 50% - 15px);
+        }
+    }
+}
