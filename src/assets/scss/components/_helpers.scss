@@ -22,8 +22,14 @@
 .mb-20{
     margin-bottom: rem-calc(20px);
 }
+.mb-30{
+    margin-bottom: 30px;
+}
 .mb-40 {
     margin-bottom: rem-calc(40px);
+}
+.mb-60 {
+    margin-bottom: 60px;
 }
 .mb-0 {
     margin-bottom: 0;
@@ -95,4 +101,7 @@ form {
             }
         }
     }
+}
+.h-23 {
+    height: 23px;
 }

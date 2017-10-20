@@ -33,6 +33,45 @@ p{
 
 .button{
     text-transform: uppercase;
+    position: relative;
+    &:before { 
+        content: ""; 
+        position: absolute; 
+        top: -22px; 
+        left: 0; 
+        right : -1px;
+        height: 21px;
+        background-image: url('assets/img/border-top.png');
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    &:after { 
+        content: ""; 
+        position: absolute; 
+        bottom: -22px; 
+        left: 0; 
+        right : -1px;
+        height: 21px;
+        background-image: url('assets/img/border.png');
+        background-repeat: no-repeat;
+        background-size: cover;  
+    } 
+    &:hover{
+        &:before{
+            background-image: url('assets/img/border-top-h.png');
+        }
+        &:after{
+            background-image: url('assets/img/border-h.png');
+        }
+    }
+    &.hollow{
+        &:before { 
+            display: none;
+        }
+        &:after { 
+            display: none;
+        } 
+    }
 }
 
 /*.off-canvas.position-left {
