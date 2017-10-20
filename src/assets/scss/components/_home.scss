@@ -1,0 +1,133 @@
+section {
+    &> .row {
+        &> h2 {
+            margin-bottom: 0;
+        }
+    }
+}
+.immo-une {
+    h1 {
+        margin-bottom: 40px;
+    }
+}
+
+.immo-type {
+    .wrap-image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &> p {
+            margin-bottom: 0;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: $noir;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+        }
+        .wrap-text {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            .lead {
+                color: $blanc;
+                font-size: 32px;
+                font-family: $oswald;
+                text-transform: uppercase;
+            }
+            .subheader {
+                display: none;
+                padding: 0 15px;
+                color: $noir;
+            }
+        }
+        &:hover {
+            &:before {
+                background-color: $blanc;
+                opacity: 0.6;
+            }
+            .wrap-text {
+                .lead {
+                    color:$noir;
+                }
+                .subheader {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.immo-estim {
+    .bg-gris {
+        background-color: $gris-clair;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        h2 {
+            color: $noir;
+            display: inline-block;
+            margin-right: 40px;
+            margin-bottom: 0;
+        }
+        button {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.immo-price {
+    .large-4 {
+        padding-left: 0;
+    }
+    .bg-rose {
+        padding: 20px 40px 30px;
+        margin-right: 0;
+        h3 {
+            color: $blanc;
+        }
+    }
+    .search-block {
+        padding-right: 0;
+        &> .row {
+            margin-right: 0;
+            margin-left: 0;
+            padding-top: 20px;
+            padding-left: 20px;
+            border: 2px solid $gris-clair;
+        }
+    }
+    .button-wrapper {
+        display: flex;
+        align-items: center;
+        min-height: 179px;
+    }
+}
+
+.immo-rating {
+    .bg-gris {
+        min-height: 371px;
+        padding: 20px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            color: $noir;
+        }
+    }
+}
+
+.immo-contact {
+    textarea {
+        min-height: 182px;
+    }
+}

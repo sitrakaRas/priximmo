@@ -1,12 +1,19 @@
 @charset 'utf-8';
 
-$icon-font-path: 'assets/fonts/';
-@import "components/fonts";
-@import "components/variable";
+$icon-font-path:  'assets/fonts/';
+$fa-font-path:    'assets/fonts';
+$slick-font-path: 'assets/fonts/';
+
+@import 'components/fonts';
+@import 'components/variable';
+@import 'components/helpers';
 
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'slick-theme.scss';
+@import 'slick.scss';
+@import 'font-awesome';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -56,5 +63,12 @@ $icon-font-path: 'assets/fonts/';
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// Base
 @import 'base';
+// Components
+@import 'components/header';
+@import 'components/footer';
+// Page
+@import 'components/home';
+// interne
 @import 'components/interne'

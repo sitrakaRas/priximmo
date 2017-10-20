@@ -18,6 +18,7 @@ const $ = plugins();
 
 // Check for --production flag
 const PRODUCTION = !!(yargs.argv.production);
+const FONT_EXT = '**/*.{eot,svg,ttf,woff,woff2}';
 
 // Load settings from settings.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
@@ -45,7 +46,8 @@ function clean(done) {
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
   return gulp.src(PATHS.assets)
-    .pipe(gulp.dest(PATHS.dist + '/assets'));
+    .pipe($.if(FONT_EXT,gulp.dest(PATHS.dist + '/assets/fonts')))
+    .pipe($.if(!FONT_EXT,gulp.dest(PATHS.dist + '/assets')));
 }
 
 // Copy page templates into finished HTML files
