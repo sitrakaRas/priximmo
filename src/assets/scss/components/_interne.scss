@@ -41,7 +41,7 @@
 		padding-bottom: 20px;
 
 		@media screen and (min-width: 40em) {
-			padding: 40px 45px;
+			padding: 20px 45px;
 		}
 	}
 }
@@ -52,6 +52,18 @@
 }
 
 .descriptif {
+	&.row{
+		@media (max-width : 40em){
+			padding: 0!important;
+		}
+	}
+	
+	aside{
+		height: auto;
+		@media (min-width : 40em){
+			height: 508px;
+		}
+	}
 	.image-desc {
 		
 		h3 {
@@ -59,11 +71,35 @@
 			margin-bottom: 27px;
 		}
 		p {
-			margin-bottom: 30px;
+			margin-bottom: 40px;
 		}
-		& + .breadcrumbs {
-			margin-top: 10px;
+		
+	}
+	.img-col{
+		height: auto;
+		overflow: hidden;
+		@media (max-width : 40em){
+			padding: 0!important;
 		}
+		@media (min-width : 40em){
+			height: 508px;
+		}
+		img{
+			height: auto;
+			@media (min-width : 40em){
+				height: 100%;
+			}
+		}
+	}
+	.breadcrumbs {
+		margin-top: 10px;
+		li{
+			text-transform: capitalize;
+		}	
+	}
+	.button{
+		margin-top: 15px;
+		padding: 1em 2.5em;
 	}
 }
 
@@ -233,6 +269,10 @@
 		line-height: 102px;
 	}
 
+	.button{
+		padding: 1em 2.5em;
+	}
+
 }
 
 .quarter-price-container {
@@ -314,4 +354,52 @@
 		}
 
 	}
+}
+
+.box-estim{
+	.img-box-estim{
+		@media screen and (max-width: 39.9375em) {
+			height: 120px;
+		}
+		height: 370px;		
+		overflow: hidden;
+
+		img{
+			@media screen and (max-width: 39.9375em) {
+				height: auto;
+				width : 100%;
+			}
+			height: 100%;
+
+		}
+	}
+	.img-desc-2{
+		height: 370px;
+		@media screen and (max-width: 39.9375em) {
+			padding: 15px;
+		}
+		h3{
+			margin-bottom: 30px;
+		}
+		p{
+			margin-bottom: 60px;
+		}
+		.bouton{
+			margin-top: 15px;
+		}
+	}
+
+}
+
+.sidebar-search{
+	@media screen and (max-width: 39.9375em) {
+		background-color: #fff;
+	}
+	.btn-recherche{
+		padding-top: 20px;
+	}
+}
+
+.white-bg{
+	background-color: $blanc;
 }
