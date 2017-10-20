@@ -3,6 +3,7 @@ h1{
     color : $rose;
     font-size: 38px;
 }
+
 h2{
     text-transform: uppercase;
     color : $gris;
@@ -23,17 +24,10 @@ p{
     }
 }
 
-footer{
-    li{
-        a{
-            font-size: 16px;
-            font-family: $oswald;
-            color : $noir;
-            font-weight: 400;
-        }
-    }
-}
-
 .button{
     text-transform: uppercase;
+}
+
+.off-canvas.position-left {
+    height: auto;
 }
