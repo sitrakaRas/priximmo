@@ -17,12 +17,13 @@ let slider = $('.slider');
 let settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     dots: true
   }
 slider.slick(settings);
 
 $(window).on('resize', function() {
-  if ($(window).width() > 768) {
+  if ($(window).width() > 767) {
     if (slider.hasClass('slick-initialized')) {
       slider.slick('unslick');
     }
@@ -33,4 +34,5 @@ $(window).on('resize', function() {
     return slider.slick(settings);
   }
 });
+$(window).trigger('resize');
 

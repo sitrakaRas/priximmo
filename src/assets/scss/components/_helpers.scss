@@ -3,6 +3,9 @@
 }
 .pt-80 {
     padding-top: rem-calc(80px);
+    @media screen and (max-width: 64em) {
+        padding-top: rem-calc(40px);
+    }
 }
 .pb-80 {
     padding-bottom: rem-calc(80px);
@@ -61,7 +64,7 @@ form {
 
 .slick-dotted.slick-slider, .slider {
     height: auto;
-    background-color: $blanc;
+    background-color: transparent;
     margin-top: 0;
     margin-bottom: 0;
     .slick-dots {
