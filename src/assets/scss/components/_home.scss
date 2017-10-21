@@ -120,6 +120,7 @@ section {
         }
         button {
             margin-bottom: 0;
+            padding: 1em 2.5em;
         }
     }
 }
@@ -175,7 +176,9 @@ section {
     .button-wrapper {
         display: flex;
         align-items: center;
+        
         @media screen and (min-width: 40em) {
+            padding-top: 25px;
             min-height: 179px;
         }
     }
