@@ -114,6 +114,12 @@ header {
                 &> button {
                     background-color: $blanc;
                     color: $rose;
+                    &:before {
+                        background-image: url(assets/img/border-top-white.png);
+                    }
+                    &:after {
+                        background-image: url(assets/img/border-white.png);
+                    }
                 }
             }
         }

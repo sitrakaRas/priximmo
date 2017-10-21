@@ -1,27 +1,98 @@
 .content-img{
     overflow: hidden;
-    height: 370px;
-    img{
-        height: 100%;
-    }
 }
 .immo-rating.estim-block{
-    .rating-block {
-        @media screen and (min-width: 64em) {
-            width: calc( 50% + 15px);
-            padding-left: 0;
-        }
-        .bg-gris{
-            padding: 0 40px;
-        }
-        .button{
-            padding: 1em 2.5em;
+    .content-img {
+        @media screen and (min-width: 40em) {
+            width: calc(50% - 15px);
+            padding-right: 0;
         }
     }
-    .content-img{
-        background-color: #f1f0ef;
-        @media screen and (min-width: 64em) {
-            width: calc( 50% - 15px);
+    .rating-block {
+        @media screen and (min-width: 40em) {
+            width: calc(50% + 15px);
+            padding-left: 0;
+        }
+        .bg-gris {
+            padding: 20px 10px;
+            @media screen and (min-width: 40em) {
+                padding: 20px 80px;
+                min-height: 371px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .content-wrapper {
+                h2, p {
+                    text-align: left
+                }
+                @media screen and (max-width: 40em) {
+                    text-align: center;
+                } 
+            }
+        }
+    }
+}
+
+.wrapper-estim-bloc {
+    @media screen and (min-width: 40em) {
+        padding: 0 58px;
+    }
+    text-align: center;
+    margin-top: 40px;
+    &> .estim-price {
+        padding: 52px 50px 42px;
+        @media screen and (min-width: 40em) {
+            padding: 52px 0 42px;
+        }
+        border: 2px solid $gris-clair;
+        &> .row {
+            margin-bottom: 20px;
+        }
+    }
+    h3 {
+        margin-bottom: 0
+    }
+    .progress {
+        display: inline-block;
+        margin: 0;
+        border: 1px solid $rose;
+        width: 32px;
+        height: 90px;
+        background-color: $blanc;
+        position: relative;
+        .progress-meter {
+            width: 100%;
+            background-color: $rose;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    .best-price {
+        h3 {
+            font-size: 24px;
+        }
+        .subheader {
+            color: $noir;
+            font-weight: bold;
+            margin-top: 0;
+        }
+    }
+}
+
+.list-criteria {
+    padding-left: 100px;
+    padding-right: 100px;
+    ul {
+        margin-left: 0;
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-family: $helvneue;
+            line-height: 1.3;
+            span {
+                font-weight: bold;
+            }
         }
     }
 }
