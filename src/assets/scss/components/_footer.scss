@@ -23,8 +23,12 @@ footer {
                 text-transform: inherit;
                 padding-right: 0;
                 padding-left: 0;
+                &:hover {
+                    color: $rose;
+                }
             }
             .button {
+                margin-top: 20px;
                 @media screen and (max-width: 40em) {
                     display: inline-block;
                 }
